@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 html {
   font-size: 10px;
 }
@@ -6,21 +8,8 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: $primaryColor;
   font-size: 1.6rem;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 
 .container {
@@ -28,5 +17,29 @@ html {
   max-width: 112.0rem;
   padding: 0 2.0rem;
   position: relative;
-  width: 100%;
+}
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: $secondaryColor;
+  border: 0.1rem solid $secondaryColor;
+  border-radius: .4rem;
+  color: $primaryColor;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  height: 3.8rem;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-appearance: none; // added to fix buttons in Safari
+  -webkit-border-radius: .4rem; // added to fix buttons in Safari
 }
